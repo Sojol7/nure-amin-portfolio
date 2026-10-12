@@ -230,10 +230,10 @@ function App() {
               <a className="btn secondary" href="#contact">
                 Contact Me
               </a>
-              <a className="btn secondary" href="/cv.html" target="_blank" rel="noreferrer">
+              <a className="btn secondary" href="./cv.html" target="_blank" rel="noreferrer">
                 View CV
               </a>
-              <a className="btn primary" href="/cv.pdf" download>
+              <a className="btn primary" href="./cv.pdf" download>
                 Download CV
               </a>
               <a
@@ -256,7 +256,7 @@ function App() {
           </div>
 
           <div className="hero-card animate-float">
-            <img className="avatar animate-pulse-soft" src="/Profile.jpg" alt="MD. Nure Amin portrait" />
+            <img className="avatar animate-pulse-soft" src="./Profile.jpg" alt="MD. Nure Amin portrait" />
             <div>
               <strong>CSE</strong>
               <small>Major in Software</small>

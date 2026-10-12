@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV Preview</title>
+    <style>
+      :root {
+        --bg: #f7f3ee;
+        --panel: #ffffff;
+        --text: #101828;
+        --muted: #5f6979;
+        --accent: #b68b5a;
+        --line: #e6dfd6;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.7;
+      }
+      .wrapper {
+        max-width: 1200px;
+        margin: 28px auto;
+        padding: 16px;
+      }
+      .topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 16px;
+        flex-wrap: wrap;
+      }
+      .title {
+        font-size: 1.2rem;
+        font-weight: 700;
+      }
+      .actions {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+      .btn {
+        display: inline-block;
+        padding: 10px 16px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: 700;
+      }
+      .primary { background: var(--accent); color: white; }
+      .secondary { border: 1px solid var(--line); background: var(--panel); color: var(--text); }
+      .viewer {
+        width: 100%;
+        min-height: 85vh;
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        background: var(--panel);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+      }
+      embed {
+        width: 100%;
+        min-height: 85vh;
+        border: 0;
+        border-radius: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="topbar">
+        <div class="title">CV Preview</div>
+        <div class="actions">
+          <a class="btn primary" href="./cv.pdf" download>Download CV</a>
+          <a class="btn secondary" href="./cv.pdf" target="_blank" rel="noreferrer">Open PDF</a>
+        </div>
+      </div>
+
+      <div class="viewer">
+        <embed src="./cv.pdf" type="application/pdf" />
+      </div>
+    </div>
+  </body>
+</html>
